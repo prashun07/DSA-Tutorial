@@ -1,8 +1,8 @@
 #include <iostream>
 #include <list>
 using namespace std;
-template <typename T>
-class Queue
+
+template <typename T>class Queue //Abstract class (Interface in C++)
 {
 public:
     virtual void push(T data) = 0;
@@ -12,7 +12,7 @@ public:
     virtual T front() = 0;
     virtual T back() = 0;
 };
-template <class T>
+template <typename T>
 class my_queue : public Queue<T>
 {
     list<T> l;
@@ -45,12 +45,12 @@ public:
 };
 int main()
 {
-    // my_queue<int> queue;
+    my_queue<int> q;
     my_queue<string>queue;
-    // queue.push(10);
-    // queue.push(20);
-    // queue.push(30);
-    // queue.push(40);
+    q.push(10);
+    q.push(20);
+    q.push(30);
+    q.push(40);
     queue.push("My");
     queue.push("Name");
     queue.push("is");
@@ -61,6 +61,13 @@ int main()
     {
         cout << "Queue Front: " << queue.front() << " " << queue.size() << endl;
         queue.pop();
+    }
+    cout<<"another queue"<<endl;
+      int n=q.size();
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Queue Front: " << q.front() << " " << q.size() << endl;
+        q.pop();
     }
     
     // queue.pop();
