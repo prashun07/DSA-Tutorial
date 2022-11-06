@@ -34,7 +34,7 @@ int main()
     char str[100];
     char ch;
     printf("Enter an String :");
-    scanf("%[^\n]%*c", str);
+    scanf("%[^\n]%*c", str); //to take a whole line as an input
     printf("Enter char to remove:");
     scanf("%c", &ch);
     getModifiedString(str, ch);
