@@ -11,7 +11,8 @@ void main(){
     char str[100];
     char toRemove;
     printf("Enter an String:");
-    gets(str);
+    // gets(str);
+    scanf("%[^\n]%*c",str);
     printf("Enter an char to count:");
     scanf("%c",&toRemove);
     int Answer=getCount(str,toRemove);
