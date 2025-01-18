@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "bits_stdcpp.h"
 using namespace std;
 int fillCups(vector<int> &amount)
 {

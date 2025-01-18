@@ -11,7 +11,7 @@ start with first index .
 find the minimun weighted edge index from key if it is not included in mstSet and take that index as node
 and iterate over all adjacent node to find next minimum. if you find minimun update parent[] and key[].
 */
-#include <bits/stdc++.h>
+#include "bits_stdcpp.h"
 using namespace std;
 int main()
 {

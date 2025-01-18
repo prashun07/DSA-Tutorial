@@ -7,7 +7,7 @@ this implementation is same expect take modification in condition to check artic
  we use array hash to store the articulation point, to avoid repeated printing of node.
 
 */
-#include <bits/stdc++.h>
+#include "bits_stdcpp.h"
 using namespace std;
 void dfs(int i, int parent, int &timer, vector<bool> &visited, vector<int> &low, vector<int> &high, 
 vector<int> adj[],vector<int>&isArticulation)

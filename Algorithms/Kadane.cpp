@@ -18,7 +18,7 @@ If currSum is less than zero, make currSum equal to zero.
 Finally, print the value of maxSum.
 */
 
-#include <bits/stdc++.h>
+#include "bits_stdcpp.h"
 using namespace std;
 int maximumSubarraySum(vector<int> arr)
 {

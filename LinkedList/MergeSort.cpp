@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include"bits_stdcpp.h"
 using namespace std;
 struct Node{
     struct Node*next;

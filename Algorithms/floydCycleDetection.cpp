@@ -12,7 +12,7 @@ if the fast pointer meets the end position then no loop exists.
 */
 // C++ program to implement
 // the above approach
-#include <bits/stdc++.h>
+#include "bits_stdcpp.h"
 using namespace std;
 
 class Node {
